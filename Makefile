@@ -10,3 +10,4 @@ prod-apply:
 	terraform init -backend-config=./env-prod/state.tfvars
 	terraform apply -auto-approve -var-file=./env-prod/main.tfvars
 
+
