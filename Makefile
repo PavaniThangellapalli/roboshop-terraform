@@ -10,4 +10,8 @@ prod-apply:
 	terraform init -backend-config=./env-prod/state.tfvars
 	terraform apply -auto-approve -var-file=./env-prod/main.tfvars
 
+destroy-dev:
+	terraform destroy -auto-appprove -var-file=./env-dev/main.tfvars
 
+destroy-prod:
+	terraform destroy -auto-appprove -var-file=./env-prod/main.tfvars
