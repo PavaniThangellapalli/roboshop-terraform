@@ -61,7 +61,7 @@ vm_size               = var.vm_size
 delete_os_disk_on_termination = true
 
 storage_image_reference {
-id = "/subscriptions/ef791f67-7558-4920-ba6c-72951b295947/resourceGroups/project-setup/providers/Microsoft.Compute/galleries/CustomImage/images/CustomImage/versions/1.0.0"
+id = "/subscriptions/ef791f67-7558-4920-ba6c-72951b295947/resourceGroups/project-setup/providers/Microsoft.Compute/galleries/CustomPractice/images/customimage/versions/1.0.0"
 }
 storage_os_disk {
   name              = "${var.component}-${var.env}-myosdisk1"
