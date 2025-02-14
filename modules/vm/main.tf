@@ -88,7 +88,7 @@ resource "null_resource" "ansible" {
       type     = "ssh"
       user     = "pavani"
       password = "UseMind@1234"
-      host     = "azurerm_public_ip.public_ip.ip_address"
+      host     = azurerm_public_ip.public_ip.ip_address
     }
     inline = [
       "sudo dnf install python3.12-pip -y",
